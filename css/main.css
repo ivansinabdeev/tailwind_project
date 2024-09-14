@@ -1911,10 +1911,6 @@ body {
      object-fit: scale-down;
 }
 
-.p-1 {
-  padding: 0.25rem;
-}
-
 .px-1 {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
@@ -2471,7 +2467,7 @@ body {
   z-index: -1;
   height: 659px;
   width: 668px;
-  background-image: url('/img/Element.png');
+  background-image: url('../img/Element.png');
   --tw-content: '';
   content: var(--tw-content);
 }
@@ -2591,7 +2587,7 @@ body {
   margin-right: auto;
   height: 825px;
   max-width: 1440px;
-  background-image: url('/img/Hero_min.png');
+  background-image: url('../img/Hero_min.png');
   background-size: 768px 305px;
   background-position: left bottom 10px;
   background-repeat: no-repeat;
@@ -2859,7 +2855,7 @@ body {
   margin-left: 6px;
   height: 15px;
   width: 13px;
-  background-image: url(/img/row.svg);
+  background-image: url(../img/row.svg);
   background-repeat: no-repeat;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
