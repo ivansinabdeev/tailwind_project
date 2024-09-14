@@ -1,0 +1,198 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base ============================================== */
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+  body {
+    font-family: "Roboto Flex", sans-serif;
+  }
+}
+.container {
+  @apply max-w-[1300px] mx-auto px-[18px];
+}
+
+/* Header =============================================== */
+
+.header {
+  @apply py-4;
+}
+.header-container {
+  @apply flex justify-between items-center px-[10px] md:px-[50px]
+   relative after:content-[''] after:bg-[url('/img/Element.png')]
+ after:absolute after:top-[-16px] after:right-0 after:w-[668px]
+  after:h-[659px] after:z-[-1];
+}
+.header-list {
+  @apply flex gap-6
+  max-md:hidden;
+}
+.header-link {
+  @apply font-normal text-base text-[#282828];
+}
+
+.btn-main {
+  @apply py-3 px-6 text-[#f7f7f7] min-w-[158px]
+   bg-[#0147ff] font-semibold text-[15px]
+    leading-normal rounded-lg flex justify-center items-center;
+}
+.header-tel {
+  @apply max-md:hidden;
+}
+
+/* Mob-menu ================================================= */
+
+.menu-toggle {
+  @apply min-h-10 min-w-10 flex items-center justify-center
+  md:hidden;
+}
+.mob-menu .menu-toggle {
+  @apply absolute top-4 right-4;
+}
+.mob-menu {
+  @apply fixed top-0 left-0 w-full h-full p-4 translate-x-full
+  bg-white transition-all duration-500
+  flex flex-col items-center justify-evenly 
+  md:hidden;
+}
+.mob-menu.is-open {
+  @apply translate-x-0;
+}
+.mob-menu-list {
+  @apply text-center;
+}
+/* Hero ==================================================== */
+
+.hero {
+  @apply py-[120px] max-w-[1440px] h-[825px] mx-auto 
+  bg-[url('/img/Hero_min.png')] bg-no-repeat 
+  bg-[left_bottom_10px]
+   bg-[length:768px_305px]
+  lg:bg-[length:1064px_404px] md:bg-[right_bottom_92px];
+}
+.hero-container {
+  @apply px-[10px] md:px-[50px];
+}
+.hero-title {
+  @apply inline-block md:block font-normal font-['Bebas_Neue'] text-[76px] leading-[1.1]
+   -tracking-[0.04em] text-[#282828] mb-8;
+}
+.hero-descr {
+  @apply inline-block md:block font-normal font-["Roboto_Condensed"] text-base text-[#282828] mb-12;
+}
+.hero-list {
+  @apply flex gap-6 flex-wrap;
+}
+.hero-tel {
+  @apply border-solid bg-transparent text-[#0147ff] outline outline-1
+  outline-[#0147ff];
+}
+
+/* Gallery ===================================================== */
+
+.gallery {
+  @apply py-20;
+}
+.gallery-descr {
+  @apply font-normal font-["Roboto_Condensed"] text-[#0147ff] text-[21px] leading-[1.5];
+}
+.gallery-title {
+  @apply font-normal font-['Bebas_Neue'] text-[#1d1d1b] text-[40px] leading-[1.2]
+  mb-6;
+}
+
+.gallery-list-auto {
+  @apply flex gap-12 mb-20;
+}
+.gallery-btn {
+  @apply font-semibold text-black text-[15px] leading-[1.5]
+    -tracking-[0.02em];
+}
+.current-btn {
+  @apply border-solid border-b border-[#0147ff] text-[#0147ff];
+}
+.swiper {
+  @apply max-w-[768px] lg:max-w-screen-lg xl:max-w-[1400px];
+}
+.swiper-pagination {
+  @apply static;
+}
+.swiper-pagination-bullet-active {
+  @apply bg-[#0147ff];
+}
+.gallery-imgs {
+  @apply gap-16 mb-12;
+}
+.gallery-item-img.swiper-slide {
+  @apply mr-0;
+}
+
+/* Info ========================================================= */
+
+.info {
+  @apply py-[88px] bg-[#282828];
+}
+.info-container {
+  @apply px-[10px] xl:px-[50px];
+}
+.info-list {
+  @apply flex gap-12 max-md:flex-col;
+}
+.info-title {
+  @apply font-normal font-['Bebas_Neue'] text-[25px]
+   leading-[1.5] -tracking-[0.03em]
+  text-white mb-4
+  max-md:text-[23px];
+}
+.info-descr {
+  @apply font-normal font-["Roboto_Condensed"] text-[14px] leading-[1.5] text-white mb-6;
+}
+.info-more {
+  @apply text-white font-["Roboto_Condensed"] font-normal
+   text-[14px] leading-[1.5] cursor-pointer relative;
+}
+.info-more {
+  @apply after:content-[''] after:absolute after:-bottom-2 after:left-0
+   after:bg-white after:w-[58px] after:h-[2px]
+   after:transition-all after:duration-500;
+}
+.info-more[open] {
+  @apply after:w-full;
+}
+
+.info-more-click {
+  @apply block relative;
+}
+.info-more-click {
+  @apply after:content-[''] after:transition-all after:duration-300
+  after:bg-[url(/img/row.svg)] after:absolute 
+  after:top-1 after:ml-[6px]
+  after:w-[13px] after:h-[15px] after:bg-no-repeat;
+}
+.info-more[open] > summary {
+  @apply mb-3;
+}
+.info-more[open] > summary::after {
+  @apply rotate-180;
+}
+
+/* Footer ====================================================== */
+
+.footer {
+  @apply py-[24px] bg-[#282828];
+}
+.footer-container {
+  @apply px-[10px] xl:px-[50px];
+}
+.footer-list {
+  @apply flex justify-between items-center;
+}
+.footer-logo {
+  @apply text-white font-bold font-["Roboto_Condensed"] text-base;
+}
+.footer-policy {
+  @apply text-white font-normal font-["Roboto_Condensed"] text-base underline;
+}

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:wght@100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header-container">
+        <a href="#" class="header-logo">
+          <svg class="header-icon" width="153" height="33">
+            <use href="./img/sprite.svg#icon-logo"></use>
+          </svg>
+        </a>
+
+        <ul class="header-list">
+          <li class="header-link">Galeria zdjęć</li>
+          <li class="header-link">FaQ</li>
+        </ul>
+
+        <a class="header-tel btn-main" href="">Zadzwoń do nas</a>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+        <div class="mob-menu js-menu-container">
+          <button class="menu-toggle js-close-menu">
+            <svg
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+
+          <ul class="mob-menu-list">
+            <li class="mob-menu-link">Galeria zdjęć</li>
+            <li class="mob-menu-link">FaQ</li>
+          </ul>
+
+          <a class="mob-menu-tel btn-main" href="">Zadzwoń do nas</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container hero-container">
+          <h1 class="hero-title">
+            Sprzedajemy samochody <br />
+            z europy
+          </h1>
+          <p class="hero-descr">
+            Kup komfortowy pojazd, aby każda podróż <br />
+            była wyjątkowym przeżyciem.
+          </p>
+          <ul class="hero-list">
+            <li class="hero-item">
+              <a href="#" class="btn-main">Zobacz zdjęcia</a>
+            </li>
+            <li class="hero-item">
+              <a href="#" class="btn-main hero-tel">Zadzwoń do nas</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="gallery">
+        <div class="container gallery-container">
+          <p class="gallery-descr">Prezentacja firmy</p>
+          <h2 class="gallery-title">Zobacz naszą Galerię zdjęć</h2>
+          <ul class="gallery-list-auto">
+            <li class="gallery-item-auto">
+              <button class="gallery-btn current-btn">Samochody osobowe</button>
+            </li>
+            <li class="gallery-item-auto">
+              <button class="gallery-btn">Samochody dostawcze</button>
+            </li>
+          </ul>
+
+          <div class="swiper mySwiper">
+            <ul class="gallery-imgs swiper-wrapper">
+              <li class="swiper-slide gallery-item-img">
+                <img src="./img/gallery/car_1.jpg" alt="car" width="600" />
+              </li>
+              <li class="swiper-slide gallery-item-img">
+                <img src="./img/gallery/car_2.jpg" alt="car" width="600" />
+              </li>
+              <li class="swiper-slide gallery-item-img">
+                <img src="./img/gallery/car_3.jpg" alt="car" width="600" />
+              </li>
+              <li class="swiper-slide gallery-item-img">
+                <img src="./img/gallery/car_1.jpg" alt="car" width="600" />
+              </li>
+              <li class="swiper-slide gallery-item-img">
+                <img src="./img/gallery/car_2.jpg" alt="car" width="600" />
+              </li>
+              <li class="swiper-slide gallery-item-img">
+                <img src="./img/gallery/car_3.jpg" alt="car" width="600" />
+              </li>
+            </ul>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <section class="info">
+        <div class="container info-container">
+          <ul class="info-list">
+            <li class="info-item">
+              <h2 class="info-title">
+                Id nostrud enim esse consectetur in eu mollit fugiat aute. Velit
+                nulla commodo.
+              </h2>
+              <p class="info-descr">
+                Mauris varius ipsum mauris, rutrum lobortis magna efficitur a.
+                Donec egestas, nisl vehicula feugiat ornare, diam turpis
+                efficitur mi, ac venenatis eros ipsum ac arcu. Vestibulum et
+                [...]
+              </p>
+              <details class="info-more">
+                <summary class="info-more-click">Rozwiń</summary>
+                Something small enough to escape casual notice.
+              </details>
+            </li>
+            <li class="info-item">
+              <h2 class="info-title">
+                Id nostrud enim esse consectetur in eu mollit fugiat aute. Velit
+                nulla commodo.
+              </h2>
+              <p class="info-descr">
+                Mauris varius ipsum mauris, rutrum lobortis magna efficitur a.
+                Donec egestas, nisl vehicula feugiat ornare, diam turpis
+                efficitur mi, ac venenatis eros ipsum ac arcu. Vestibulum et
+                [...]
+              </p>
+              <details class="info-more">
+                <summary class="info-more-click">Rozwiń</summary>
+                Something small enough to escape casual notice.
+              </details>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer-container">
+        <ul class="footer-list">
+          <li class="footer-item">
+            <a class="footer-logo" href="">Cars Spot</a>
+          </li>
+          <li class="footer-item">
+            <a class="footer-policy" href="">Polityka prywatności</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script type="module" src="./js/swiper.js"></script>
+    <script type="module" src="./js/mob-menu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
