@@ -22,7 +22,7 @@
 }
 .header-container {
   @apply flex justify-between items-center px-[10px] md:px-[50px]
-   relative after:content-[''] after:bg-[url('/img/Element.png')]
+   relative after:content-[''] after:bg-[url('./img/Element.png')]
  after:absolute after:top-[-16px] after:right-0 after:w-[668px]
   after:h-[659px] after:z-[-1];
 }
@@ -68,7 +68,7 @@
 
 .hero {
   @apply py-[120px] max-w-[1440px] h-[825px] mx-auto 
-  bg-[url('/img/Hero_min.png')] bg-no-repeat 
+  bg-[url('./img/Hero_min.png')] bg-no-repeat 
   bg-[left_bottom_10px]
    bg-[length:768px_305px]
   lg:bg-[length:1064px_404px] md:bg-[right_bottom_92px];
@@ -168,7 +168,7 @@
 }
 .info-more-click {
   @apply after:content-[''] after:transition-all after:duration-300
-  after:bg-[url(/img/row.svg)] after:absolute 
+  after:bg-[url(./img/row.svg)] after:absolute 
   after:top-1 after:ml-[6px]
   after:w-[13px] after:h-[15px] after:bg-no-repeat;
 }
